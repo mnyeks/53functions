@@ -30,5 +30,5 @@ test("takes a string parameter and returns the supplied parameter in uppercase",
 });
 
 test("takes a string parameter and returns the reversed string parameter", function(assert) {
- assert.equal(uppercase("Awsome"),"emoswA");
+ assert.equal( reverse("emosewA"),"Awesome");
 });
