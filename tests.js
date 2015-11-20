@@ -30,5 +30,13 @@ test("takes a string parameter and returns the supplied parameter in uppercase",
 });
 
 test("takes a string parameter and returns the reversed string parameter", function(assert) {
- assert.equal( reverse("emosewA"),"Awesome");
+ assert.equal(reverse("emosewA"),"Awesome");
 });
+
+test("takes a number as parameter and returns a list of hello world entries equal to the number supplied", function(assert) {
+ assert.deepEqual( hello_list(7), ["hello world", "hello world", "hello world", "hello world", "hello world", "hello world", "hello world"]);
+});
+
+test("a list of numbers returns the highest and lowest numbers in the list", function(assert) {
+ assert.deepEqual( high_low(20), [20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0])
+})
